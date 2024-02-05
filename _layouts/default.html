@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <html>
+        <head>
+            {% include head.html %}
+        </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
-</head>
+    <body>
 
-<body>
-    {{content}}
-</body>
+        {% include inline-styles.html %}
+        
+        {{content}}
 
+        {% include footer.html %}
+        
+        <!-- JQuery  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <!-- Lightgallery for pop-ups  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+        
+        <!-- Slick slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- Typed JS for Animations and Transitions-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <!-- Animate on scroll for Animations and Transitions-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <script src="/main.js"></script>
+
+    </body>
 </html>

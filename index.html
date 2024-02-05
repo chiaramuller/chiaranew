@@ -1,5 +1,131 @@
 ---
 layout: default
-title: Homepage
+projects:
+ - name: Join Sustainable Change
+   description: Retreats | Workshops | Events 
+   url: https://www.joinsustainablechange.com
+ - name: The Burrow Coffeeshop
+   description: Sample Website 
+   url: https://theburrowcoffeeshop.netlify.app
+ - name: Negroni Cocktail Bar  
+   description: Sample Website
+   url: https://negroni.netlify.app/
+ - name: Eisdiele Fontana Aschheim
+   description: Eisdiele
+   url: https://www.eisdielefontana.com
 ---
-<h1>Welcome to your homepage!</h1>
+<section id="intro" class="grid-center-middle tall-100">
+
+    <div class="col-4_md-10_sm-12 padded-r-2 padded-l-2">
+        <div class="bg-image bg-overlay grid-middle tall-60 " style="background-image: url('/images/chiara2.jpeg');">
+            <div class="col-12 center ">
+                <div class="child center">
+                    <h2 class="">Chiara Müller <br></h2>
+
+                    <div id="typed-strings-2">
+                        <h1 class="">< Web Design & Web Development ></h1>
+                    </div>
+              
+                    <h1 id="typed-2" class=""></h1>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="col-12 center">
+        <a class="button contact-button full-width" href="#contact-section">Schicke mir eine Anfrage</a>
+    </div>
+
+</section>
+
+<section class="grid">
+    <div class="col-7_sm-12" data-aos="fade-up" data-aos-duration="1000">
+        <h2>< Web Design ></h2>
+        <p>Ich gestalte <span class="emphasised">gemeinsam mit Dir</span>  Deine strategische Website. <span class="emphasised">Deine</span> Ziele stehen bei mir im Vordergrund, damit wir eine UI/UX schaffen, die genau auf dein Zielpublikum abgestimmt ist. Am Ende hast du einen atemberaubenden Online-Auftritt, der gleichzeitig problemlos funktioniert & einfach in der Anwendung ist. </p>    
+    </div>
+</section>
+
+<section class="grid-right">
+    <div class="col-7_sm-12" data-aos="fade-up" data-aos-duration="1000">
+        <h2>< Web Development ></Web></h2>
+        <p>Bei mir kriegst du eine <span>custom-coded Website</span>. Programmiert mit HTML, CSS und JScript - unglaublich flexibel, mobile-responsive, schnell-ladend und ohne viel Schnick-Schnack. Damit sich Deine Website vom Rest abhebt.</p>    
+    </div>
+</section>
+
+<section class="grid "> 
+    <div class="col-12 center" data-aos="fade-up" data-aos-duration="1000">
+        <a class="button contact-button full-width">Schicke mir eine Anfrage</a>
+    </div>
+</section>
+
+
+<section id="sectionPin" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="margin-b">< Projekte & Muster ></Projekte></h2>
+
+    <div class="grid horizontal-scroll">
+        {% for item in page.projects %}
+            <div class="col-3_md-8_sm-10">
+                <a class="button-project btn hover-border-11 center" href="{{item.url}}" target="_blank">
+                    <span class="item-description">{{item.description}} <br> </span> 
+                    <span class="item-name">{{item.name}} <br> </span>
+                    <span class="item-arrow"> → </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section id="contact-section" class="grid" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="margin-b">< contact me ></h2>
+    <div class="col-12 grid">
+        <div class="col-4_md-12 padded-r">
+            <p>
+                Na? Hast du Lust zusammen zu arbeiten? Schreibe mir einfach unverbindlich eine kurze Email. <br> <br>
+                Ich freue mich auf Deine Nachricht!  
+            </p>
+        </div>
+        <div class="col-6_md-12">
+            <form class="grid-center" netlify>
+                <div class="col-12">
+                    <label for="_name" required> < Dein Name > </label>
+                    <input type="text" name="_name" id="_name" placeholder="Name" required/>
+                </div>
+                <div class="col-12">
+                    <label for="_replyto" > < Deine Email > </label>
+                    <input type="email" name="_replyto" id="_replyto" placeholder="Email" required />
+                </div>
+                <div class="col-12">
+                    <label for="_replyto"> < Deine bisherige website > </label>
+                    <input type="text" name="_replyto" id="_replyto" placeholder="www.deine-website.com" />
+                </div>
+        
+                <div class="col-12">
+                    <label for="message left">< Wie kann ich dir helfen? ></label>
+                    <textarea name="message" id="message" placeholder="Hey Chiara, ich habe Interesse an einer neuen Website..." required></textarea>
+                </div>
+            
+    
+            
+                <button type="submit" class="button "> Anfrage versenden </button>
+            </form>
+    
+        </div>
+    
+
+    </div>
+</section>
+
+
+<section class="padded-b">
+    <h2>< about me ></h2>
+    <p> Ich bin Chiara, Web-Designerin und Web-Entwicklerin aus München. Ich liebe es kleine Unternehmen mit Ihrem Web-Auftritt zu unterstützen, denn der geile Mix aus kreativer und logischer Arbeit ist genau das Richtige für mich. Mit meiner Arbeit im Startup und meinem Studium der Wirtschaftsinformatik, habe ich immer die Kundenbrille auf und weiß, was eine gute UI/UX ausmacht! Passend für Deine Kundengruppe und somit für Deine Ziele. 
+        <br>
+        Ich hab Lust auf die Zusammenarbeit. Was ist mit Dir? :)</p>
+
+</section>
+
